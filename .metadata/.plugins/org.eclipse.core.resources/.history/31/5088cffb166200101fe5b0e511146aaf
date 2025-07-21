@@ -1,0 +1,19 @@
+package com.ycw.decision;
+
+public class TernaryOp {
+	public static void main(String[] args) {
+		int num = 10;
+		String result;
+		
+		if (num % 2 == 0) {
+			result = "짝수";
+		}else {
+			result = "홀수";
+		}
+		System.out.println("num: " + result);
+		
+		result = "";
+		result = num % 2 == 0 ? "짝수": "홀수";
+		System.out.println("num: " + result);
+	}
+}

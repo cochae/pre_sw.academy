@@ -1,0 +1,15 @@
+package com.ycw.ch12.step02;
+
+import com.ycw.ch12.step03.Dog;
+
+public class AnimalExam {
+
+	public static void main(String[] args) {
+		Animal puppy = new Dog();
+		Animal sparrow = new Bird();
+		
+		puppy.sound();
+		sparrow.sound();
+	}
+
+}

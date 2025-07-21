@@ -1,0 +1,13 @@
+package com.ycw.ch12.step03;
+
+import com.ycw.ch12.step02.Animal;
+
+public class Dog extends Animal{
+	
+	@Override
+	public void sound() {
+		System.out.println("멍멍!");
+	}
+
+
+}

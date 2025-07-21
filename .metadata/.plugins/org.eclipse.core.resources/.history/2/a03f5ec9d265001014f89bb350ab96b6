@@ -1,0 +1,5 @@
+package com.ycw.ch12.step04;
+
+public class DieselEngine extends Engine{
+	
+}

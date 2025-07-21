@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;IfTest.java&apos; to &apos;Hello/src/com.ycw.decision&apos;&#x0D;&#x0A;- Original project: &apos;Hello&apos;&#x0D;&#x0A;- Destination element: &apos;Hello/src/com.ycw.decision&apos;&#x0D;&#x0A;- Original element: &apos;com.ycw.repeat.IfTest.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;com.ycw.decision" element1="/src&lt;com.ycw.repeat{IfTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1752650288384" units="1" version="1.0"/>
+</session>

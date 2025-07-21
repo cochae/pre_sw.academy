@@ -1,0 +1,10 @@
+package com.ycw.ch11;
+
+import com.ycw.test.B;
+
+public class Exam extends B{
+	public static void main(String[] args) {
+		B b = new B();
+		
+	}
+}
