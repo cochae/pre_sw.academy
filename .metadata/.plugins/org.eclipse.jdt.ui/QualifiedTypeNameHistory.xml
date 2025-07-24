@@ -1,5 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
     <fullyQualifiedTypeName name="com.ycw.ch06.car"/>
+    <fullyQualifiedTypeName name="com.ycw.ch13.step03.IceCream"/>
+    <fullyQualifiedTypeName name="java.util.zip.CheckedOutputStream"/>
+    <fullyQualifiedTypeName name="java.lang.StringIndexOutOfBoundsException"/>
+    <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
+    <fullyQualifiedTypeName name="java.lang.Runnable"/>
+    <fullyQualifiedTypeName name="com.ycw.ch14.step03.FlagThread"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="com.ycw.ch14.step04.VendingMachine"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="com.ycw.ch15.step02.IntPiggyBank"/>
+    <fullyQualifiedTypeName name="com.ycw.ch15.step02.GenericPiggyBank"/>
+    <fullyQualifiedTypeName name="com.ycw.ch15.step03.GenericPiggyBank"/>
+    <fullyQualifiedTypeName name="java.lang.InterruptedException"/>
+    <fullyQualifiedTypeName name="com.ycw.ch15.step04.ArrayTool"/>
+    <fullyQualifiedTypeName name="com.ycw.ch16.step02.ArgNoReturn"/>
+    <fullyQualifiedTypeName name="java.lang.FunctionalInterface"/>
+    <fullyQualifiedTypeName name="java.util.function.DoubleConsumer"/>
 </qualifiedTypeNameHistroy>
