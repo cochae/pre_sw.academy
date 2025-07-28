@@ -31,4 +31,7 @@
     <fullyQualifiedTypeName name="java.util.Iterator"/>
     <fullyQualifiedTypeName name="java.security.NoSuchAlgorithmException"/>
     <fullyQualifiedTypeName name="java.util.NoSuchElementException"/>
+    <fullyQualifiedTypeName name="com.ycw.arraylist.DoublyLinkedList"/>
+    <fullyQualifiedTypeName name="java.util.Stack"/>
+    <fullyQualifiedTypeName name="com.ycw.stack.LLStack"/>
 </qualifiedTypeNameHistroy>

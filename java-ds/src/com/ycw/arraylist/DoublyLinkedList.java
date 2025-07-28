@@ -1,8 +1,9 @@
 package com.ycw.arraylist;
 
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
-public class DoublyLinkedList<E> implements List<E>{
+public class DoublyLinkedList<E> implements List<E>, Iterable<E>{
 	
 	private class Node<E> {
 		private Node<E> next;
@@ -50,12 +51,12 @@ public class DoublyLinkedList<E> implements List<E>{
 				x = x.next;
 			}
 			if(index == 0) {
-				node.prev = x.prev; // 필수?
+				node.prev = x.prev; //  == null / 필수?
 				x.prev = node;
 				node.next = x;
 				head = node;
 			}
-			else {
+			else { 
 				x.prev.next = node;
 				node.prev = x.prev;
 				node.next = x;
@@ -85,19 +86,28 @@ public class DoublyLinkedList<E> implements List<E>{
 		for(int i = 0; i < index; i++) {
 			x = x.next;
 		}
-		if(index == size-1) {
-			x.prev.next = null;
-			tail = x.prev;
+		
+		if(index == 0){
+			if(size == 1) {
+				head = null;
+				tail = x.prev;
+			}
+			else {
+				x.next.prev = null;
+				head = x.next;
+			}
 		}
-		else if(index == 0){
-			x.next.prev = null;
-			head = x.next;
+		else if(x == tail) {
+			x.prev.next = x.next;
+			tail = x.prev;
 		}
 		else {
 			x.prev.next = x.next;
 			x.next.prev = x.prev;
 		}
+		size--;
 		return r;
+		
 	}
 
 	@Override
@@ -121,7 +131,25 @@ public class DoublyLinkedList<E> implements List<E>{
 
 	@Override
 	public Iterator<E> iterator(){
-		return null;
+
+		return new Iterator<E>() {
+			private Node<E> pos = head;
+			@Override
+			public boolean hasNext() {
+				return (pos != null);
+			}
+
+			@Override
+			public E next() {
+				if(pos == null) {
+					throw new NoSuchElementException();
+				}
+				E data = pos.data;
+				pos = pos.next;
+				return data;
+			}
+			
+		};
 	}
 	private void checkBoundInclusive(int index) {
 		if(index < 0 || index > size) {
